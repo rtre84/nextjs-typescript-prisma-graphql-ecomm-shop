@@ -2419,10 +2419,12 @@ type Query {
   """
   Fetches an object given its ID
   """
-  node("""
-  The ID of an object
-  """
-  id: ID!): Node
+  node(
+    """
+    The ID of an object
+    """
+    id: ID!
+  ): Node
 }
 
 type Subscription {

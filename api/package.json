@@ -60,6 +60,9 @@
     "ts-node": "8.3.0",
     "typescript": "3.5.3"
   },
+  "resolutions": {
+    "graphql": "14.0.2"
+  },
   "now": {
     "alias": [
       "react-prisma-graphql-shopping-cart-api.kattcorp.co.uk",
