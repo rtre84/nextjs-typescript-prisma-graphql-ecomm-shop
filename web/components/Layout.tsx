@@ -8,6 +8,7 @@ import Checkout from './Checkout';
 import Header from './Header';
 
 const isBrowser: boolean = !!(process as any).browser;
+// const isBrowser = !!process.browser;
 if (isBrowser) {
   Modal.setAppElement('#__next');
 }
@@ -20,9 +21,8 @@ interface LayoutProps extends WithOrderProps {
 export type MouseCallback = (e?: MouseEvent<HTMLElement>) => void;
 
 export default class Layout extends Component<LayoutProps> {
-
   public render() {
-    const {children, url, title, orderId} = this.props;
+    const { children, url, title, orderId } = this.props;
     return (
       <Fragment>
         <Head>
@@ -32,25 +32,23 @@ export default class Layout extends Component<LayoutProps> {
         </Head>
         <style jsx global>{`
           ${normalizeCSS}
-          * { box-sizing: border-box; }
+          * {
+            box-sizing: border-box;
+          }
           body {
             background: #e5e5e5;
             font: 10px;
             color: #000;
             font-family: 'Roboto', sans-serif;
           }
-          input[type="submit"], button {
+          input[type='submit'],
+          button {
             cursor: pointer;
           }
         `}</style>
-        <Header {...{orderId, openCheckoutModal: this.openCheckoutModal}} />
-        <main>
-          {children}
-        </main>
-        <Modal
-          isOpen={this.isCheckoutOpen()}
-          onRequestClose={Router.back}
-          >
+        <Header {...{ orderId, openCheckoutModal: this.openCheckoutModal }} />
+        <main>{children}</main>
+        <Modal isOpen={this.isCheckoutOpen()} onRequestClose={Router.back}>
           <Checkout orderId={this.props.orderId} url={url} />
         </Modal>
         <style jsx>{`
@@ -58,7 +56,7 @@ export default class Layout extends Component<LayoutProps> {
             padding: 2rem;
           }
         `}</style>
-     </Fragment>
+      </Fragment>
     );
   }
   private isCheckoutOpen(): boolean {

@@ -1,5 +1,5 @@
 {
-  "compileOnSave": false,
+  "compileOnSave": true,
   "compilerOptions": {
     "target": "esnext",
     "module": "esnext",
@@ -12,10 +12,12 @@
     "removeComments": false,
     "preserveConstEnums": true,
     "sourceMap": true,
-    "skipLibCheck": false,
+    "skipLibCheck": true,
     "baseUrl": ".",
     "typeRoots": ["./node_modules/@types"],
     "lib": ["dom", "es2015", "es2016"],
     "esModuleInterop": false
-  }
+  },
+  "include": ["*.ts"],
+  "exclude": ["node_modules", "dist"]
 }

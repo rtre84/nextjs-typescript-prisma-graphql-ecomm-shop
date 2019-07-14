@@ -7,3 +7,9 @@ export default withOrder((props: WithOrderProps) => (
     <ProductSection orderId={props.orderId} url={props.url} />
   </Layout>
 ));
+
+// export default withOrder(props => (
+//   <Layout {...props}>
+//     <ProductSection orderId={props.orderId} url={props.url} />
+//   </Layout>
+// ));

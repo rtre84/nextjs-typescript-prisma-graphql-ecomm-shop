@@ -16,14 +16,14 @@ export = {
   globals_path: '',
 
   selenium: {
-    start_process: false,
-    server_path: '',
+    start_process: true,
+    server_path: '/Users/mr.mac/Downloads/selenium-server-standalone-3.141.59.jar',
     log_path: '',
     port: 4444,
     cli_args: {
-      'webdriver.chrome.driver': '',
-      'webdriver.gecko.driver': '',
-      'webdriver.edge.driver': '',
+      'webdriver.chrome.driver': '/Users/mr.mac/Downloads/chromedriver_76_latest',
+      // 'webdriver.gecko.driver': '',
+      // 'webdriver.edge.driver': '',
     },
   },
 
