@@ -1,0 +1,36 @@
+2019-07-14T12:33:27.467576000 0.014101s notice: Recursively removing directory /Users/mr.mac/Code/nodejs-ecommerce-playground/shop/rethinkdb_data/tmp
+2019-07-14T12:33:27.474070000 0.020601s notice: Initializing directory /Users/mr.mac/Code/nodejs-ecommerce-playground/shop/rethinkdb_data
+2019-07-14T12:33:27.474652000 0.021174s info: Creating a default database for your convenience. (This is because you ran 'rethinkdb' without 'create', 'serve', or '--join', and the directory '/Users/mr.mac/Code/nodejs-ecommerce-playground/shop/rethinkdb_data' did not already exist or is empty.)
+2019-07-14T12:33:27.474744000 0.021266s notice: Running rethinkdb 2.3.6 (CLANG 10.0.0 (clang-1000.10.43.1))...
+2019-07-14T12:33:27.485824000 0.032348s notice: Running on Darwin 18.6.0 x86_64
+2019-07-14T12:33:27.485918000 0.032441s notice: Loading data from directory /Users/mr.mac/Code/nodejs-ecommerce-playground/shop/rethinkdb_data
+2019-07-14T12:33:27.592382000 0.138907s info: Automatically using cache size of 175 MB
+2019-07-14T12:33:27.593040000 0.139565s notice: Listening for intracluster connections on port 29015
+2019-07-14T12:33:27.595143000 0.141668s notice: Listening for client driver connections on port 28015
+2019-07-14T12:33:27.595301000 0.141826s notice: Listening for administrative HTTP connections on port 8080
+2019-07-14T12:33:27.595311000 0.141835s notice: Listening on cluster addresses: 127.0.0.1, ::1
+2019-07-14T12:33:27.595317000 0.141841s notice: Listening on driver addresses: 127.0.0.1, ::1
+2019-07-14T12:33:27.595319000 0.141843s notice: Listening on http addresses: 127.0.0.1, ::1
+2019-07-14T12:33:27.595333000 0.141857s notice: To fully expose RethinkDB on the network, bind to all addresses by running rethinkdb with the `--bind all` command line option.
+2019-07-14T12:33:27.595338000 0.141862s notice: Server ready, "mrs_macbook_pro_6wd" 0d9d8011-0b86-4bee-8161-9aff3ca6c92f
+2019-07-14T12:34:57.795622000 90.344060s info: Table 117d7bf4-fc5e-4f53-a831-aa5e29ff398d: Starting a new Raft election for term 1.
+2019-07-14T12:34:57.796063000 90.344502s info: Table 117d7bf4-fc5e-4f53-a831-aa5e29ff398d: Added replica on this server.
+2019-07-14T12:34:57.805746000 90.354185s info: Table 117d7bf4-fc5e-4f53-a831-aa5e29ff398d: This server is Raft leader for term 1. Latest log index is 0.
+2019-07-14T12:35:05.721526000 98.270133s info: Table 29fe4cdd-48f4-4a3b-a905-76fc9ec68788: Starting a new Raft election for term 1.
+2019-07-14T12:35:05.721700000 98.270306s info: Table 29fe4cdd-48f4-4a3b-a905-76fc9ec68788: Added replica on this server.
+2019-07-14T12:35:05.732373000 98.280980s info: Table 29fe4cdd-48f4-4a3b-a905-76fc9ec68788: This server is Raft leader for term 1. Latest log index is 0.
+2019-07-14T12:35:13.575588000 106.124362s info: Table 9dcd6b56-3ae8-4e07-8949-32eec3c66bf5: Starting a new Raft election for term 1.
+2019-07-14T12:35:13.575925000 106.124698s info: Table 9dcd6b56-3ae8-4e07-8949-32eec3c66bf5: Added replica on this server.
+2019-07-14T12:35:13.595603000 106.144377s info: Table 9dcd6b56-3ae8-4e07-8949-32eec3c66bf5: This server is Raft leader for term 1. Latest log index is 0.
+2019-07-14T12:35:25.964734000 118.513770s info: Table d6c292b8-b36e-41ba-a762-f14df378a637: Starting a new Raft election for term 1.
+2019-07-14T12:35:25.964956000 118.513992s info: Table d6c292b8-b36e-41ba-a762-f14df378a637: Added replica on this server.
+2019-07-14T12:35:25.976944000 118.525981s info: Table d6c292b8-b36e-41ba-a762-f14df378a637: This server is Raft leader for term 1. Latest log index is 0.
+2019-07-14T12:35:34.115936000 126.665145s info: Table e93aad7f-bde0-464e-800c-e593c3f4a3cf: Starting a new Raft election for term 1.
+2019-07-14T12:35:34.116116000 126.665325s info: Table e93aad7f-bde0-464e-800c-e593c3f4a3cf: Added replica on this server.
+2019-07-14T12:35:34.128054000 126.677264s info: Table e93aad7f-bde0-464e-800c-e593c3f4a3cf: This server is Raft leader for term 1. Latest log index is 0.
+2019-07-14T12:35:41.873945000 134.423318s info: Table 8cb7436e-d915-43a1-a203-3c80008fc78f: Starting a new Raft election for term 1.
+2019-07-14T12:35:41.874159000 134.423533s info: Table 8cb7436e-d915-43a1-a203-3c80008fc78f: Added replica on this server.
+2019-07-14T12:35:41.891765000 134.441139s info: Table 8cb7436e-d915-43a1-a203-3c80008fc78f: This server is Raft leader for term 1. Latest log index is 0.
+2019-07-14T12:35:53.389640000 145.939258s info: Table 8ace7656-7516-47e3-a63b-23a55b0cf9f1: Starting a new Raft election for term 1.
+2019-07-14T12:35:53.389778000 145.939395s info: Table 8ace7656-7516-47e3-a63b-23a55b0cf9f1: Added replica on this server.
+2019-07-14T12:35:53.401801000 145.951420s info: Table 8ace7656-7516-47e3-a63b-23a55b0cf9f1: This server is Raft leader for term 1. Latest log index is 0.

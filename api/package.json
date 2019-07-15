@@ -33,8 +33,10 @@
   "private": true,
   "dependencies": {
     "async-lock": "1.2.0",
+    "babel-plugin-graphql-tag": "^2.4.0",
     "bcryptjs": "2.4.3",
     "graphql": "0.13.2",
+    "graphql-tag": "^2.10.1",
     "graphql-yoga": "1.16.2",
     "jsonwebtoken": "8.5.1",
     "prisma-binding": "1.5.19"

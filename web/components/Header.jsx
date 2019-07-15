@@ -1,69 +1,47 @@
-import Link from 'next/link';
-import Router from 'next/router';
-import { Fragment } from 'react';
-import { saveOrderId } from '../lib/withOrder';
-import GetOrderQuery from '../queries/GetOrderQuery';
-const navItemsHeight = '3rem';
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+var link_1 = require("next/link");
+var router_1 = require("next/router");
+var react_1 = require("react");
+var withOrder_1 = require("../lib/withOrder");
+var GetOrderQuery_1 = require("../queries/GetOrderQuery");
+var navItemsHeight = '3rem';
 function getNumberOfItems(order) {
-    return order.rows.reduce((sum, { quantity }) => sum + quantity, 0);
+    return order.rows.reduce(function (sum, _a) {
+        var quantity = _a.quantity;
+        return sum + quantity;
+    }, 0);
 }
-export default ({ orderId, openCheckoutModal }) => (<Fragment>
+exports.default = (function (_a) {
+    var orderId = _a.orderId, openCheckoutModal = _a.openCheckoutModal;
+    return (`<react_1.Fragment>
     <header>
       <nav>
-        <Link href="/" prefetch>
+        <link_1.default href="/" prefetch>
           <a>Home</a>
-        </Link>{' '}
-        <Link href="/about" prefetch>
+        </link_1.default>{' '}
+        <link_1.default href="/about" prefetch>
           <a>About</a>
-        </Link>{' '}
+        </link_1.default>{' '}
         <a href="/checkout" onClick={openCheckoutModal}>
           Checkout
-          <GetOrderQuery {...{ orderId }}>
-            {({ order }) => order && <Fragment> ({getNumberOfItems(order)})</Fragment>}
-          </GetOrderQuery>
+          <GetOrderQuery_1.default {...{ orderId: orderId }}>
+            {function (_a) {
+        var order = _a.order;
+        return order && <react_1.Fragment> ({getNumberOfItems(order)})</react_1.Fragment>;
+    }}
+          </GetOrderQuery_1.default>
         </a>
-        <a href="?clearOrderId" onClick={e => {
-    e.preventDefault();
-    saveOrderId(undefined, { isBrowser: true });
-    Router.reload(Router.route);
-}}>
+        <a href="?clearOrderId" onClick={function (e) {
+        e.preventDefault();
+        withOrder_1.saveOrderId(undefined, { isBrowser: true });
+        router_1.default.reload(router_1.default.route);
+    }}>
           Clear cart
         </a>
       </nav>
     </header>
     <div className="placeholder"/>
-    <style jsx>{`
-      a {
-        display: inline-block;
-        padding: 0 1rem;
-        text-decoration: none;
-        background: rgba(255, 255, 255, 0.1);
-        color: white;
-        font-size: 1.2rem;
-        line-height: ${navItemsHeight};
-
-        transition: background 0.3s ease-out;
-      }
-      a:hover {
-        background: rgba(255, 255, 255, 0.3);
-      }
-      a:focus {
-        background: rgba(255, 255, 255, 0.4);
-      }
-      a:not(:last-child) {
-        margin-right: 1rem;
-      }
-      header {
-        position: fixed;
-        top: 0;
-        background: black;
-        width: 100%;
-        padding: 0 2rem;
-      }
-      .placeholder {
-        height: ${navItemsHeight};
-        visibility: hidden;
-      }
-    `}</style>
-  </Fragment>);
-//# sourceMappingURL=Header.jsx.map
+    <style jsx>{"\n      a {\n        display: inline-block;\n        padding: 0 1rem;\n        text-decoration: none;\n        background: rgba(255, 255, 255, 0.1);\n        color: white;\n        font-size: 1.2rem;\n        line-height: " + navItemsHeight + ";\n\n        transition: background 0.3s ease-out;\n      }\n      a:hover {\n        background: rgba(255, 255, 255, 0.3);\n      }\n      a:focus {\n        background: rgba(255, 255, 255, 0.4);\n      }\n      a:not(:last-child) {\n        margin-right: 1rem;\n      }\n      header {\n        position: fixed;\n        top: 0;\n        background: black;\n        width: 100%;\n        padding: 0 2rem;\n      }\n      .placeholder {\n        height: " + navItemsHeight + ";\n        visibility: hidden;\n      }\n    "}</style>
+  </react_1.Fragment>`);
+});
